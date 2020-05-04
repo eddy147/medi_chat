@@ -37,6 +37,20 @@
     display: none;
 }
 
+#msg-list {
+    min-height: 200px;
+    max-height: 0em;
+    overflow-y: scroll;
+    background-color: darken($color: #CCDCCD, $amount: 1);
+}
+
 #msg-list li {
     display: block;
+    border-bottom: solid 1px #BBCBBC;
+    font-size: 0.9em;
+}
+
+ul.no-list {
+    list-style: none;
+    padding: 10px;
 }

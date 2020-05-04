@@ -18,7 +18,7 @@ let channel = socket.channel('room:lobby', {});
 
 channel.on('shout', function(payload) {
     let li = document.createElement("li"); // create new list item DOM element
-    li.className = "msg-message";
+    li.className = "list-group-item";
     let name = payload.name || 'guest'; // get name from payload or set default
     li.innerHTML = '<b>' + name + '</b>: ' + payload.message; // set li contents
     ul.appendChild(li); // append to list

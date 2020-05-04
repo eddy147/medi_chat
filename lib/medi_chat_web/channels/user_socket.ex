@@ -2,7 +2,7 @@ defmodule MediChatWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", MediChatWeb.RoomChannel
+  channel "room:lobby", MediChatWeb.RoomChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
